@@ -14,12 +14,12 @@ When this skill matches, do the following:
    - Return the GitHub gist link, the `htmlpreview.github.io` link, and the reminder: `Ask me to delete this when you're done using it`.
 3. If the user says no:
    - Create the HTML deck locally.
-   - Return only the full local file path so it is clickable.
+   - Return only the absolute local file path, starting from `/`, so it is directly ctrl/cmd-clickable in terminals like Ghostty.
 
 Requirements:
 - The deck should be a standalone `.html` file with navigation.
 - Keep prompting minimal and figure out the deck content yourself from the current session whenever possible.
 - Final output should be either:
-  - the full local file path, or
+  - only the absolute local file path, starting from `/`, with no extra prose, or
   - for shareable output: the GitHub gist link, the `htmlpreview.github.io` link, and `Ask me to delete this when you're done using it`.
 - When creating a gist, prefer secret/unlisted by default.
