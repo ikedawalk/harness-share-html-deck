@@ -1,5 +1,5 @@
 ---
-name: harness-share-html-deck
+name: shareable-html-deck
 description: Create a navigable HTML deck that presents or summarizes the current session. Use when the user asks to present, summarize, or turn current-session work into an HTML deck, slides, or a shareable presentation.
 ---
 

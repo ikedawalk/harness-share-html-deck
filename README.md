@@ -1,4 +1,4 @@
-# harness-share-html-deck
+# shareable-html-deck
 
 A small Pi skill for turning the current session into a navigable HTML presentation deck.
 
