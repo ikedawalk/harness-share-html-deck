@@ -8,8 +8,9 @@ When this skill matches, do the following:
 1. Before creating the deck, ask a single question: whether the user wants it to be shareable.
 2. If the user says yes:
    - Create the HTML deck locally first.
-   - Use `gh gist create` to upload it as a public gist.
-   - Return only the GitHub gist link.
+   - Use `gh gist create` to upload it as a gist.
+   - Also produce an `htmlpreview.github.io` URL for the raw gist HTML file.
+   - Return only the GitHub gist link and the `htmlpreview.github.io` link.
 3. If the user says no:
    - Create the HTML deck locally.
    - Return only the full local file path so it is clickable.
@@ -17,4 +18,6 @@ When this skill matches, do the following:
 Requirements:
 - The deck should be a standalone `.html` file with navigation.
 - Keep prompting minimal and figure out the deck content yourself from the current session whenever possible.
-- Final output should be only a single link: either the local file path or the GitHub link.
+- Final output should be either:
+  - the full local file path, or
+  - exactly two links for shareable output: the GitHub gist link and the `htmlpreview.github.io` link.
